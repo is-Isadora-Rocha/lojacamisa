@@ -8,15 +8,15 @@
         </tr>
     </thead>
     <tbody>
-        <!--Exibir todos os produtos por meio de array-->
+        <!--percorrer um array de produtos-->
+        <!-- <%= para exibir na página -->
         <% todos = Produto.all %>
-        <% @todos.each do |produto| %>
+        <% todos.each do |produto| %>
             <tr>
-                <!-- <%= para mostrar no sistema -->
                 <td><%= produto.nome %></td>
                 <td><%= produto.descricao %></td>
-                <td><%= produto.quantidade %></td>
                 <td><%= produto.preco %></td>
+                <td><%= produto.quantidade %></td>
             </tr>
         <% end %>
     </tbody>
