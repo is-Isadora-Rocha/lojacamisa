@@ -1,0 +1,23 @@
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+            <th>Quantidade</th>            
+        </tr>
+    </thead>
+    <tbody>
+        <!--Exibir todos os produtos por meio de array-->
+        <% todos = Produto.all %>
+        <% @todos.each do |produto| %>
+            <tr>
+                <!-- <%= para mostrar no sistema -->
+                <td><%= produto.nome %></td>
+                <td><%= produto.descricao %></td>
+                <td><%= produto.quantidade %></td>
+                <td><%= produto.preco %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
