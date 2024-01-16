@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   #Exemplo:
   # get "[o nome que queremos para a URL]" => "[nome do Controller]#[nome da página]"
 
+  # Se você acessar /produtos, você acessará o CONTROLADOR ProdutosController no
+  # método index
 end
