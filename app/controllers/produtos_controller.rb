@@ -1,7 +1,7 @@
 class ProdutosController < ApplicationController
 
   def index
-    @todos = Produto.order :nome
+    @produtos = Produto.order :nome
   end
 
 end
